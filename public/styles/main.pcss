@@ -2,6 +2,7 @@
 
   --color-text: #4a4a4a;
   --color-primary: #ff8080;
+  --color-primary--dark: #e34f4f;
   --color-gray: #ccc;
   --color-gray--light: #f6f6f6;
 
@@ -59,6 +60,16 @@ body {
 p {
 
   font-family: var(--font-serif);
+}
+
+a {
+
+  color: var(--color-primary);
+  transition: color 250ms;
+
+  &:hover {
+    color: var(--color-primary--dark);
+  }
 }
 
 #wrapper {
@@ -183,4 +194,9 @@ p {
 
     color: var(--color-primary);
   }
+}
+
+.socialLink {
+
+  margin-right: var(--margin-medium);
 }
